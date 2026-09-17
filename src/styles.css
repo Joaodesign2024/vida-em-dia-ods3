@@ -1,0 +1,37 @@
+
+:root{
+  --green:#0e7a4b; --green-dark:#0a5e39; --green-soft:#e6f5ed;
+  --deep:#0a2e1f; --accent:#22c67a; --text:#1a2e24;
+}
+*{scroll-behavior:smooth}
+body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:var(--text); background:#fbfdfc}
+.site-header{background:#ffffffcc; backdrop-filter:blur(12px); border-bottom:1px solid #e6eee9}
+.brand-mark{background:var(--green); color:white; width:36px; height:36px; display:grid; place-items:center; border-radius:10px}
+.btn-action{background:var(--green); color:white; border:none}
+.btn-action:hover{background:var(--green-dark); color:white}
+.hero-section{padding:5rem 0 3rem; background:radial-gradient(800px 400px at 10% 0%, #d7f5e5 0%, transparent 70%), radial-gradient(600px 400px at 90% 20%, #c8e8ff 0%, transparent 60%)}
+.eyebrow{letter-spacing:.12em; text-transform:uppercase; font-size:.75rem; font-weight:700; color:var(--green)}
+.section-pad{padding:4.5rem 0}
+.bg-soft{background:var(--green-soft)}
+.bg-deep{background:var(--deep)}
+.section-label{letter-spacing:.12em; text-transform:uppercase; font-size:.75rem; font-weight:700; color:var(--green)}
+.section-label.light{color:#86efac}
+.section-title{font-weight:800; line-height:1.1; letter-spacing:-.02em}
+.ods-panel{background:white; border-radius:24px; padding:2rem; box-shadow:0 10px 30px rgba(0,0,0,.06); border:1px solid #e6eee9}
+.ods-number{font-size:4rem; font-weight:900; color:var(--green); line-height:1}
+.metric-box{background:white; border-radius:16px; padding:1rem; border:1px solid #e6eee9}
+.metric-box strong{display:block}
+.info-card,.resource-card{background:white; border-radius:20px; padding:1.5rem; border:1px solid #e6eee9; transition:.2s; box-shadow:0 4px 12px rgba(0,0,0,.04)}
+.info-card:hover,.resource-card:hover{transform:translateY(-3px); box-shadow:0 12px 24px rgba(0,0,0,.08)}
+.resource-icon{width:44px; height:44px; display:grid; place-items:center; background:var(--green-soft); border-radius:12px; color:var(--green); margin-bottom:.8rem}
+.timeline{display:grid; gap:1rem; border-left:3px solid var(--green-soft); padding-left:1.5rem}
+.timeline-item{display:grid; grid-template-columns:90px 1fr; gap:1rem}
+.timeline-item time{font-weight:800; color:var(--green)}
+.support-form{background:#ffffff14; backdrop-filter:blur(8px); border:1px solid #ffffff2a; border-radius:20px; padding:1.5rem}
+.site-footer{background:#0a1f15; color:#cde9d8; padding:3.5rem 0 2rem}
+.site-footer a{color:#cde9d8; text-decoration:none}
+.site-footer a:hover{color:white}
+.habito-card{border-radius:16px; border:1px dashed #b6d7c3; padding:1rem; background:#f2faf5}
+.api-card{border-radius:20px; background:white; border:1px solid #e6eee9; padding:1.25rem}
+.badge-soft{background:var(--green-soft); color:var(--green-dark); border:1px solid #bfe8cc}
+.skip-link{position:absolute; left:-9999px}
