@@ -53,7 +53,7 @@ export default function Recursos(){
                   </select>
                 </div>
               </div>
-              <div className="mt-2 small text-muted">Exibindo {filtrados.length} de {recursos.length} • Favoritos: {fav.length} • Manipulação de DOM com eventos onChange/onClick</div>
+              <div className="mt-2 small text-muted">Exibindo {filtrados.length} de {recursos.length} • Favoritos: {fav.length}</div>
             </div>
           </div>
         </div>
