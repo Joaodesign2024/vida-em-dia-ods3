@@ -18,10 +18,10 @@ export default function Triagem(){
     if(!validar()) return
     // Simula processamento + manipulação DOM
     const orientacoes={
-      'Saúde mental':'Procure acolhimento: CAPS Pinheiro, CVV 188, respiração guiada na aba Recursos.',
-      'Vacinação':'Verifique cartão vacinal no posto mais próximo - Unidade Central de Pinheiro.',
+      'Saúde mental':'Procure acolhimento: Hospital Lidia Martins, CVV 188, respiração guiada na aba Recursos.',
+      'Vacinação':'Verifique cartão vacinal no posto mais próximo - Hospital Lídia Martins.',
       'Alimentação':'Priorize alimentos in natura, 5 porções de frutas/verduras, beba 2L água.',
-      'Atividade física':'150 min/semana moderado - caminhada na Praça do Centenário.'
+      'Atividade física':'60 min/dia moderado - caminhada na Praça da Família - Próximo ao Porto de Bequimão.'
     }
     setResultado({tema:form.tema, texto: orientacoes[form.tema]||'Orientação geral de autocuidado.', perfil:form.perfil})
   }
@@ -31,9 +31,9 @@ export default function Triagem(){
       <div className="container">
         <div className="row g-5">
           <div className="col-lg-5">
-            <p className="section-label light">Triagem interativa • JS + Eventos</p>
+            <p className="section-label light">Triagem interativa</p>
             <h2 className="section-title">Encontre orientação por perfil e tema</h2>
-            <p>Form com validação, estado React, preventDefault, feedback instantâneo e localStorage.</p>
+            <p>Cada necessidade é única. Encontre orientações de acordo com seu perfil e situação.</p>
             {resultado && (
               <div className="alert alert-light mt-3">
                 <strong>Resultado para {resultado.perfil} - {resultado.tema}</strong>

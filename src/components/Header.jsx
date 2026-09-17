@@ -16,7 +16,7 @@ export default function Header(){
             <ul className="navbar-nav ms-auto align-items-lg-center">
               <li className="nav-item"><NavLink className="nav-link" to="/">Início</NavLink></li>
               <li className="nav-item"><NavLink className="nav-link" to="/recursos">Recursos</NavLink></li>
-              <li className="nav-item"><NavLink className="nav-link" to="/dashboard">Painel API</NavLink></li>
+              <li className="nav-item"><NavLink className="nav-link" to="/dashboard">Painel</NavLink></li>
               <li className="nav-item"><NavLink className="nav-link" to="/triagem">Triagem</NavLink></li>
               <li className="nav-item"><Link className="btn btn-sm btn-action ms-lg-3 px-3" to="/triagem">Participar</Link></li>
             </ul>
