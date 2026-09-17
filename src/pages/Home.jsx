@@ -9,9 +9,8 @@ export default function Home(){
       <section className="section-pad">
         <div className="container">
           <div className="row g-4 align-items-center">
-            <div className="col-lg-5"><div className="ods-panel"><span className="ods-number">3</span><h2>ODS 3: Saúde e Bem-Estar</h2><p>De HTML estático para SPA interativa: componentização, useState, useEffect, eventos.</p></div></div>
-            <div className="col-lg-7"><h2 className="section-title">Evolução da Nota 1 para Nota 2</h2><ul><li>Antes: HTML + CSS + Bootstrap estático</li><li>Agora: React, Router, componentes reutilizáveis, estado global via localStorage</li><li>Interatividade: filtros, busca, favoritos, IMC, respiração, triagem validada</li><li>API: 3 endpoints públicos com tratamento JSON e loading/error</li></ul></div>
-          </div>
+            <div className="col-lg-5"><div className="ods-panel"><span className="ods-number">3</span><h2>ODS 3: Saúde e Bem-Estar</h2><p>Assegurar uma vida saudável e promover o bem-estar para todas as pessoas, em todas as idades.</p></div></div>
+            <div className="col-lg-7"><h2 className="section-title">Prevenção, autocuidado e acesso à orientação confiável.</h2><ul><li>O projeto responde à dificuldade de muitas pessoas em encontrar orientações simples sobre vacinação, saúde mental, alimentação, atividade física e serviços de atendimento.</li><li>
         </div>
       </section>
       <Recursos />
