@@ -42,7 +42,7 @@ export default function DashboardAPI(){
                     <div className="col-6"><div className="metric-box"><strong>{new Date(covid.datetime).toLocaleDateString('pt-BR')}</strong><span>atualização</span></div></div>
                   </div>
                   <pre className="bg-dark text-white p-2 rounded small mt-3 mb-0" style={{maxHeight:180, overflow:'auto'}}>{JSON.stringify(covid, null, 2)}</pre>
-                  <p className="small text-muted mt-2">Tratamento JSON: toLocaleString, formatação de data e exibição em cards + raw JSON para relatório.</p>
+                  <p className="small text-muted mt-2">Dados atualizados em tempo real.</p>
                 </div>
               )}
             </div>
@@ -59,7 +59,7 @@ export default function DashboardAPI(){
             </div>
 
             <div className="api-card">
-              <h3 className="h6 fw-bold"><i className="bi bi-geo me-2"></i>Municípios do MA (Fonte:IBGE)</h3>
+              <h3 className="h6 fw-bold"><i className="bi bi-geo me-2"></i>Municípios do MA (Fonte: IBGE)</h3>
               <div className="input-group mt-2">
                 <span className="input-group-text"><i className="bi bi-search"></i></span>
                 <input className="form-control" value={buscaMun} onChange={e=>setBuscaMun(e.target.value)} placeholder="Filtrar município" />
