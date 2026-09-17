@@ -38,7 +38,7 @@ export default function Recursos(){
     <section id="recursos-lista" className="section-pad bg-soft">
       <div className="container">
         <div className="row g-4 mb-4">
-          <div className="col-lg-6"><p className="section-label">Interatividade JS + DOM</p><h2 className="section-title">Filtros, busca, favoritos e cálculo IMC em tempo real.</h2></div>
+          <div className="col-lg-6"><p className="section-label">🔍🔎</p><h2 className="section-title">Filtros, busca, favoritos e cálculo IMC em tempo real.</h2></div>
           <div className="col-lg-6">
             <div className="api-card">
               <div className="row g-2">
@@ -89,7 +89,7 @@ export default function Recursos(){
           </div>
           <div className="col-lg-6">
             <div className="api-card h-100">
-              <h3 className="h6 fw-bold"><i className="bi bi-wind me-2"></i>Respiração 4-7-8 (DOM + setInterval)</h3>
+              <h3 className="h6 fw-bold"><i className="bi bi-wind me-2"></i>Respiração 4-7-8</h3>
               <Respiracao />
             </div>
           </div>
@@ -117,7 +117,7 @@ function Respiracao(){
   return (
     <div>
       <div className="display-6 fw-bold text-success">{fase}</div>
-      <p className="small text-muted">Exercício guiado para ansiedade. Usa manipulação do DOM e timers.</p>
+      <p className="small text-muted">Exercício guiado para ansiedade.</p>
       <button className="btn btn-dark btn-sm" onClick={iniciar} disabled={ativo}>{ativo?'Respirando...':'Iniciar'}</button>
     </div>
   )
