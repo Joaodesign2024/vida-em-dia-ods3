@@ -24,7 +24,7 @@ export default function DashboardAPI(){
   return (
     <section className="section-pad">
       <div className="container">
-        <p className="section-label">Consumo de dados • Fetch API • JSON</p>
+        <p className="section-label"><h1>________________________________</h1></p>
         <h2 className="section-title mb-4">Painel ao vivo: APIs públicas sem chave</h2>
 
         <div className="row g-3">
