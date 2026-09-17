@@ -24,13 +24,13 @@ export default function DashboardAPI(){
   return (
     <section className="section-pad">
       <div className="container">
-        <p className="section-label"><h1>________________________________</h1></p>
-        <h2 className="section-title mb-4">Painel ao vivo: APIs públicas sem chave</h2>
+        <p className="section-label"><h1>--------------------------------------------</h1></p>
+        <h2 className="section-title mb-4">Painel ao vivo</h2>
 
         <div className="row g-3">
           <div className="col-lg-5">
             <div className="api-card">
-              <h3 className="h6 fw-bold"><i className="bi bi-activity me-2"></i>COVID-19 - Maranhão (BrasilAPI)</h3>
+              <h3 className="h6 fw-bold"><i className="bi bi-activity me-2"></i>COVID-19 - Maranhão (Brasil)</h3>
               {loadingCovid && <div className="spinner-border text-success" role="status"></div>}
               {erroCovid && <div className="alert alert-danger small">{erroCovid} - exibindo fallback</div>}
               {covid && (
@@ -50,16 +50,16 @@ export default function DashboardAPI(){
 
           <div className="col-lg-7">
             <div className="api-card mb-3">
-              <h3 className="h6 fw-bold"><i className="bi bi-lightbulb me-2"></i>Dica de bem-estar (AdviceSlip API)</h3>
+              <h3 className="h6 fw-bold"><i className="bi bi-lightbulb me-2"></i>Dica de bem-estar</h3>
               <blockquote className="blockquote my-3"><p className="h6 fst-italic">"{tip}"</p></blockquote>
               <button className="btn btn-sm btn-outline-success" onClick={async()=>{
                 const r=await fetch('https://api.adviceslip.com/advice'); const j=await r.json(); setTip(j.slip.advice)
-              }}><i className="bi bi-arrow-clockwise me-1"></i> Nova dica (Fetch + JSON)</button>
-              <div className="small text-muted mt-2">Endpoint: api.adviceslip.com/advice - retorna JSON {"{ slips: { advice }}"}</div>
+              }}><i className="bi bi-arrow-clockwise me-1"></i> Nova dica</button>
+              <div className="small text-muted mt-2"> Explore{"{ slips: { advice }}"}</div>
             </div>
 
             <div className="api-card">
-              <h3 className="h6 fw-bold"><i className="bi bi-geo me-2"></i>Municípios do MA (IBGE API)</h3>
+              <h3 className="h6 fw-bold"><i className="bi bi-geo me-2"></i>Municípios do MA (Fonte:IBGE)</h3>
               <div className="input-group mt-2">
                 <span className="input-group-text"><i className="bi bi-search"></i></span>
                 <input className="form-control" value={buscaMun} onChange={e=>setBuscaMun(e.target.value)} placeholder="Filtrar município" />
@@ -67,7 +67,7 @@ export default function DashboardAPI(){
               <div className="row g-2 mt-2">
                 {filtradosMun.map(m=><div key={m.id} className="col-6 col-md-4"><div className="badge badge-soft w-100 text-start p-2">{m.nome}</div></div>)}
               </div>
-              <p className="small text-muted mt-2 mb-0">Total no MA: {municipios.length} • Demonstra consumo de API REST com filtro DOM em tempo real.</p>
+              <p className="small text-muted mt-2 mb-0">Total no MA: {municipios.length}</p>
             </div>
           </div>
         </div>
