@@ -12,9 +12,9 @@ export default function Hero(){
       <div className="container">
         <div className="row align-items-center g-5">
           <div className="col-lg-6">
-            <p className="eyebrow">ODS 3 • Saúde e Bem-Estar • Pinheiro-MA</p>
+            <p className="eyebrow">ODS 3 • Saúde e Bem-Estar • Bequimão-MA</p>
             <h1 className="display-5 fw-bolder">Saúde e bem-estar com informação clara para a comunidade.</h1>
-            <p className="lead">Interface da Nota 1 transformada em SPA React: filtro, eventos, DOM, localStorage e consumo de APIs públicas em JSON.</p>
+            <p className="lead">A aplicação Vida em Dia reúne orientações, campanhas e canais de apoio para incentivar hábitos saudáveis, prevenção de doenças e cuidado integral com a saúde física e mental.</p>
             <div className="d-flex flex-wrap gap-3 mt-3">
               <a href="#recursos-lista" className="btn btn-success btn-lg"><i className="bi bi-journal-medical me-2"></i>Ver recursos</a>
               <a href="/dashboard" className="btn btn-outline-dark btn-lg"><i className="bi bi-broadcast me-2"></i>Ver dados ao vivo</a>
@@ -39,9 +39,9 @@ export default function Hero(){
               <div className="d-flex align-items-center gap-3 mb-2"><span className="ods-number">3</span><div><h2 className="h5 mb-0 fw-bold">ODS 3</h2><small>Assegurar vida saudável para todos</small></div></div>
               <p className="small">Situação-problema: dificuldade de acesso a orientações simples sobre vacinação, saúde mental e serviços locais. Público: estudantes, famílias e moradores. Objetivo: reunir prevenção e canais de apoio.</p>
               <div className="row g-2">
-                <div className="col-4"><div className="metric-box text-center"><strong>React</strong><small>SPA</small></div></div>
-                <div className="col-4"><div className="metric-box text-center"><strong>Fetch</strong><small>API JSON</small></div></div>
-                <div className="col-4"><div className="metric-box text-center"><strong>DOM</strong><small>Eventos</small></div></div>
+                <div className="col-4"><div className="metric-box text-center"><strong>🌐Site</strong><small>Informação confiável e acessível</small></div></div>
+                <div className="col-4"><div className="metric-box text-center"><strong>🗨️Orientações</strong><small>Vacinação, saúde mental e serviços locais</small></div></div>
+                <div className="col-4"><div className="metric-box text-center"><strong>🤝Apoio</strong><small>Prevenção e canais de atendimento</small></div></div>
               </div>
             </div>
           </div>
