@@ -55,7 +55,7 @@ export default function DashboardAPI(){
               <button className="btn btn-sm btn-outline-success" onClick={async()=>{
                 const r=await fetch('https://api.adviceslip.com/advice'); const j=await r.json(); setTip(j.slip.advice)
               }}><i className="bi bi-arrow-clockwise me-1"></i> Nova dica</button>
-              <div className="small text-muted mt-2"> Explore{"{ slips: { advice }}"}</div>
+              <div className="small text-muted mt-2"> Explore{}</div>
             </div>
 
             <div className="api-card">
